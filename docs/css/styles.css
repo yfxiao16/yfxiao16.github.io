@@ -11441,8 +11441,8 @@ section.resume-section .resume-section-content {
     flex-wrap: wrap;
     /* justify-content: center; */
     align-items: flex-start;
-    max-height: 400px; /* Set maximum height for the gallery container */
-    overflow-y: hidden; /* Add vertical scrollbar */
+    max-height: 600px; /* Set maximum height for the gallery container */
+    overflow-y: auto; /* Add vertical scrollbar */
 }
 
 .gallery-item {
