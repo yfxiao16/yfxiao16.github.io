@@ -11434,3 +11434,28 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* Gallery styles */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: flex-start;
+    max-height: 400px; /* Set maximum height for the gallery container */
+    overflow-y: hidden; /* Add vertical scrollbar */
+}
+
+.gallery-item {
+    margin: 10px; /* Add space around images */
+    text-align: center; /* Center-align images and description */
+}
+
+.gallery-item img {
+    max-width: auto; /* Limit the maximum width of images */
+    height: 150px; /* Automatically adjust height to maintain aspect ratio */
+    border: none; /* Remove border around images */
+}
+
+.gallery-item p {
+    margin-top: 5px; /* Add margin above the description */
+}
