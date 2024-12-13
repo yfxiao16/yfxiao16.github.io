@@ -41,17 +41,17 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 255, 127, 80;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-primary-rgb: 0, 38, 118; /*HERE*/
+  --bs-secondary-rgb: 1, 1, 51;
   --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
+  --bs-info-rgb: 1, 1, 51;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-color-rgb: 0,0,0;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -100,14 +100,34 @@ hr {
 hr:not([size]) {
   height: 1px;
 }
-
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+/*HERE*/
+h6, .h6, h5, .h5, h1, .h1{
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
-  color: #343a40;
+  color: #FDB515;
+  text-transform: uppercase;
+}
+
+h2, .h2, h3, .h3{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  color: #002676;
+  text-transform: uppercase;
+}
+
+h4, .h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  color: #002676;
 }
 
 h1, .h1 {
@@ -157,6 +177,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  color: #010133;
 }
 
 abbr[title],
@@ -235,13 +256,13 @@ sub {
 sup {
   top: -0.5em;
 }
-
+/*HERE*/
 a {
-  color: #ff7f4f;
+  color: #FDB515;
   text-decoration: none;
 }
 a:hover {
-  color: #E65100;
+  color: #C09748;
   text-decoration: underline;
 }
 
@@ -7359,8 +7380,12 @@ textarea.form-control-lg {
   margin-right: auto !important;
 }
 
+.mb-00 {
+  margin-bottom: -0.5rem !important;
+}
+
 .mb-0 {
-  margin-bottom: 0 !important;
+  margin-bottom: 0rem !important;
 }
 
 .mb-1 {
@@ -11292,7 +11317,7 @@ textarea.form-control-lg {
 }
 body {
   padding-top: 3.375rem;
-  color: #6c757d;
+  color: #010133;
 }
 
 @media (min-width: 992px) {
@@ -11300,19 +11325,6 @@ body {
     padding-top: 0;
     padding-left: 17rem;
   }
-}
-h1, .h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  text-transform: uppercase;
 }
 
 h1, .h1 {
@@ -11324,11 +11336,13 @@ p.lead {
   font-weight: 400;
 }
 
+/*HERE*/
 .subheading {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem;
+  color: #FDB515;
 }
 
 #sideNav {
@@ -11391,7 +11405,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #002676;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -11401,7 +11415,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #ff7f4f;
+  background-color: #C09748;
 }
 
 .dev-icons {
@@ -11459,3 +11473,24 @@ section.resume-section .resume-section-content {
 .gallery-item p {
     margin-top: 5px; /* Add margin above the description */
 }
+
+.ucb-link {
+    color: #002676;
+    text-decoration: none; /* 移除默认下划线 */
+}
+
+.usc-link {
+    color: #990000;
+    text-decoration: none;
+}
+
+.ucb-link:hover {
+    color: #C09748;
+    text-decoration: underline; /* 鼠标悬停时添加下划线 */
+}
+
+.usc-link:hover {
+    color: #C09748;
+    text-decoration: underline;
+}
+
